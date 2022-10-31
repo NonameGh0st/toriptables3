@@ -27,7 +27,7 @@ class TorIptables:
     self.virtual_net = "10.0.0.0/10"  # VirtualAddrNetwork
     self.local_loopback = "127.0.0.1" # Local loopback
     self.non_tor_net = ["192.168.0.0/16", "172.16.0.0/12"]
-    self.non_tor = ["127.0.0.0/9", "127.128.0.0/10", "127.0.0.0/8"]
+    self.non_tor = ["127.0.0.0/9", "127.128.0.0/10", "127.0.0.0/8","api.gologin.com"]
     self.tor_uid = getoutput("id -ur debian-tor")  # Tor user uid
     self.trans_port = "9040"  # Tor port
     self.tor_config_file = '/etc/tor/torrc'
